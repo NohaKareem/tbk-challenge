@@ -7,7 +7,8 @@
 	const SHAVINGS_IMG = document.querySelector('.shavingsImg');	
 	const CANCEL_BUTTON = document.querySelector('.cancelButton');	
 	const CTA_BUTTON = document.querySelector('.CTAbutton');	
-
+	const CONFIRMATION_CHECKBOX = document.querySelector('#confirmationLabel');	
+	console.log(CONFIRMATION_CHECKBOX)
 	/**
 	 * reveal pop-over after 3 seconds, with easeOut animation
 	 */
@@ -38,9 +39,14 @@
 	 * close pop-over on keyboard shortcut, ESC (ascii 27)
 	 */
 	document.onkeydown = function(e) {
-		if(e.keyCode == 27) {
-			closePopOver();
-		}
+		if(e.keyCode == 27) closePopOver();
+	}
+
+	/**
+	 * check checkbox on keyboard shortcut, Enter (ascii 13)
+	 */
+	CONFIRMATION_CHECKBOX.onkeydown = function(e) {
+		if(e.keyCode == 13) CONFIRMATION_CHECKBOX.click();
 	}
 
 	/**
