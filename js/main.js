@@ -50,14 +50,13 @@
 	}
 
 	/**
-	 * Scroll Parallax 
+	 * Scroll parallax animation
 	 */
 	gsap.registerPlugin(ScrollTrigger);
 
 	// chisel
 	gsap.to(CHISEL_IMG, {
-		scrollTrigger:// CHISEL_IMG,
-		 {
+		scrollTrigger: {
 			trigger: CHISEL_IMG,
 			start: 10,
 			scrub: 2,
@@ -70,8 +69,7 @@
 
 	// shavings
 	gsap.to(SHAVINGS_IMG, {
-		scrollTrigger:
-		 {
+		scrollTrigger: {
 			trigger: SHAVINGS_IMG,
 			start: 10,
 			scrub: 2,
@@ -81,5 +79,4 @@
 		y: 500,
 		duration: 10
 	});
-
 })();
