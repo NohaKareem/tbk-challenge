@@ -29,12 +29,12 @@
 		 {
 			trigger: CHISEL_IMG,
 			start: 10,
-			// start: "center",
+			scrub: 2,
 			markers: true,
 			toggleActions: "restart pause restart pause"
 		},
-		y: -100,
-		duration: 3
+		y: -200,
+		duration: 7
 	});
 
 	// shavings
@@ -43,12 +43,13 @@
 		 {
 			trigger: SHAVINGS_IMG,
 			start: 10,
+			scrub: 2,
 			// start: "center",
 			markers: true,
 			toggleActions: "restart pause restart pause"
 		},
-		y: 100,
-		duration: 3
+		y: 200,
+		duration: 7
 	});
 
 })();
