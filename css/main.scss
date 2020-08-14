@@ -77,14 +77,14 @@ h1 {
 
     //rectangle frames
     .rectangleFrame {
-        width: 80px;
+        width: 30%;
         border: solid  6px $frameGrey;
     }
 
     .rectangleFrame:first-child {
         position: absolute;
         top: $spacingHeight * 3;
-        height: 510px;
+        height: 37%;//510px;
         z-index: 1;
         // height: 55px;
     }
@@ -197,7 +197,6 @@ h1 {
             background-color: $footer_FontRed;
             color: white;
 
-
             p {
                 margin-bottom: $spacingHeight;
             }
@@ -209,9 +208,7 @@ h1 {
                 color: white;
                 border: none;
 
-                width: 138px;
                 height: 40px;
-                // height: 57.28px;
             }
             
             .CTAbutton:hover {
@@ -224,8 +221,8 @@ h1 {
 
                 #formText {
                     display: grid;
-                    grid-template-columns: repeat(3, minmax(0, 1fr));
-                    column-gap: $spacingWidth;
+                    grid-template-rows: repeat(3, minmax(0, 1fr));
+                    row-gap: $spacingWidth;
                 }
 
                 ::-webkit-input-placeholder {
@@ -291,16 +288,22 @@ h1 {
     }
 }
 
-    // // mobile 
-    // @media screen and (min-width: $mobileWidth) {
-    //     #popOverContent {
-    //         main {
-    //             .largeText {
-                    
-    //             }
-    //         }   
-    //     }
-    // }
+// mobile 
+@media screen and (min-width: $mobileWidth) and (max-width: 360px) {
+    .popOver {
+        .rectangleFrame:first-child {
+            height: 19.5%;
+        }   
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 890px) {
+    .popOver {
+        .rectangleFrame:first-child {
+            height: 32%;
+        }   
+    }
+}
 
 // desktop 
 @media screen and (min-width: $desktopWidth) {
@@ -316,6 +319,14 @@ h1 {
             width: 15%;
             // margin-right: -73%;
             margin-top: -40%;
+        }
+
+        .rectangleFrame {
+            width: 160px;
+        }
+
+        .rectangleFrame:first-child {
+            height: 410px;//510px;
         }
 
         #popOverContent {
@@ -336,6 +347,11 @@ h1 {
                 #confirmationLabel {
                     grid-template-columns: 1fr 9fr;
                     width: 40%;//~
+                }
+
+                #formText {
+                    column-gap: $spacingWidth;
+                    grid-template-columns: repeat(3, minmax(0, 1fr));
                 }
             }
         }

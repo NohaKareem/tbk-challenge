@@ -22,16 +22,32 @@
 
 	// scroll Parallax
 	gsap.registerPlugin(ScrollTrigger);
+
+	// chisel
 	gsap.to(CHISEL_IMG, {
-		scrollTrigger: CHISEL_IMG,
-		//  {
-			// trigger: CHISEL_IMG,
-			// toggleActions: "restart pause restart pause"
-		// },
-		// x: 10,
-		// rotation: 360,
-		y: 10,
-		duration: 5
+		scrollTrigger:// CHISEL_IMG,
+		 {
+			trigger: CHISEL_IMG,
+			start: "-10 center",
+			start: "center",
+			markers: true,
+			toggleActions: "restart pause restart pause"
+		},
+		y: -100,
+		duration: 3
+	});
+
+	// shavings
+	gsap.to(SHAVINGS_IMG, {
+		scrollTrigger:
+		 {
+			trigger: SHAVINGS_IMG,
+			start: "-10 center",
+			markers: true,
+			toggleActions: "restart pause restart pause"
+		},
+		y: 100,
+		duration: 3
 	});
 
 })();
