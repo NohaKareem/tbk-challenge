@@ -99,6 +99,13 @@ h1 {
 .popOver #popOverContent main {
   z-index: 2;
 }
+.popOver #popOverContent main .cancelButton {
+  color: #c40045;
+  border: none;
+  margin-left: auto;
+  margin-top: 1.5em;
+  cursor: pointer;
+}
 .popOver #popOverContent main h1 {
   margin-bottom: 1.5em;
 }

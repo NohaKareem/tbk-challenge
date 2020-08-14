@@ -133,6 +133,14 @@ h1 {
             @extend .centerAlign;
             z-index: 2;
 
+            .cancelButton {
+                color: $line_BulletRed;
+                border: none;
+                margin-left: auto;
+                margin-top: $spacingHeight;
+                cursor: pointer;
+            }
+
             h1 {
                 margin-bottom: $spacingHeight;
             }

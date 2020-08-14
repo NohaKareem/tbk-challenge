@@ -1,26 +1,44 @@
-//self executing anonymous function
 (function() {
 	"use strict";
-	console.log();
+	console.log('page loaded');
 	const TIME_TILL_POPUP = 3000;
 	const POPOVER = document.querySelector(".popOver");
 	const CHISEL_IMG = document.querySelector('.chiselImg');
 	const SHAVINGS_IMG = document.querySelector('.shavingsImg');	
+	const CANCEL_BUTTON = document.querySelector('.cancelButton');	
 
-	// show pop-over after 3 seconds
+	/**
+	 * reveal pop-over after 3 seconds
+	 */
 	window.setTimeout(() => {
-		console.log('3')
 		POPOVER.classList.remove("hidden");
 	}, TIME_TILL_POPUP);
 
-	// close pop-over on keyboard shortcut, ESC (ascii 27)
+	/**
+	 * close pop-over
+	 */
+	function closePopOver() {
+		POPOVER.classList.add("hidden");
+		console.log('no page reload');
+	}
+
+	/**
+	 * close pop-over on cancel button click
+	 */
+	CANCEL_BUTTON.addEventListener('click', closePopOver, false); 
+	
+	/**
+	 * close pop-over on keyboard shortcut, ESC (ascii 27)
+	 */
 	document.onkeydown = function(e) {
 		if(e.keyCode == 27) {
-			POPOVER.classList.add("hidden");
+			closePopOver();
 		}
 	}
 
-	// scroll Parallax
+	/**
+	 * Scroll Parallax 
+	 */
 	gsap.registerPlugin(ScrollTrigger);
 
 	// chisel
@@ -30,11 +48,11 @@
 			trigger: CHISEL_IMG,
 			start: 10,
 			scrub: 2,
-			markers: true,
+			// markers: true,
 			toggleActions: "restart pause restart pause"
 		},
 		y: -500,
-		duration: 7
+		duration: 10
 	});
 
 	// shavings
@@ -44,12 +62,11 @@
 			trigger: SHAVINGS_IMG,
 			start: 10,
 			scrub: 2,
-			// start: "center",
-			markers: true,
+			// markers: true,
 			toggleActions: "restart pause restart pause"
 		},
 		y: 500,
-		duration: 7
+		duration: 10
 	});
 
 })();
