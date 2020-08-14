@@ -1,5 +1,5 @@
 $desktopWidth: 1200px;
-$mobileWidth: 320px; //~
+$mobileWidth: 320px; 
 $spacingHeight: 1.5em;
 $spacingWidth: 10px;
 
@@ -57,7 +57,6 @@ body {
 
 h1 {
     text-align: center;
-    // font-size: $spacingHeight;//~
 }
 
 .pageContent {
@@ -68,9 +67,8 @@ h1 {
     @extend .centerAlign;
 
     background-color: $translucentGrey;
-    width: 100%;//vw;//~
-    height: 100%;//100vh;
-    // z-index: 3;
+    width: 100%;
+    height: 100%;
 
     overflow-x: hidden;
     position: relative;
@@ -86,14 +84,11 @@ h1 {
         top: $spacingHeight * 3;
         height: 37%;//510px;
         z-index: 1;
-        // height: 55px;
     }
 
     .rectangleFrame:last-child {
         height: 55px;
-        // bottom: $spacingHeight * -6;
         margin-top: $spacingHeight * -5.5;
-        // position: absolute;
     }
 
     //images
@@ -153,7 +148,6 @@ h1 {
 
             .largeText {
                 font-size: 10vw;
-                // margin-bottom: $spacingHeight * 2;//~
             }
 
             hr {
@@ -163,8 +157,6 @@ h1 {
                 border: none;
                 width: 20%;
                 text-align: center;
-                // margin-left: 0;
-                // margin-top: 2%;
             }
 
             .inviteDetails {
@@ -243,12 +235,6 @@ h1 {
                     padding-left: $spacingWidth;
                 }
 
-                // input::placeholder {
-                //     color: black;
-                //     @extend .futuraPTFont;
-                //     padding-left: $spacingWidth;
-                // }
-
                 input[type=text], input[type=email] {
                     border: none;
                 }
@@ -308,7 +294,7 @@ h1 {
 // desktop 
 @media screen and (min-width: $desktopWidth) {
     .popOver {
-    // images
+        // images
         .chiselImg {
             width: 25%;
             margin-left: -81.5%;
@@ -317,7 +303,6 @@ h1 {
     
         .shavingsImg {
             width: 15%;
-            // margin-right: -73%;
             margin-top: -40%;
         }
 
@@ -333,7 +318,6 @@ h1 {
             main {
                 .largeText {
                     font-size: 70px;
-                    // margin-bottom: $spacingHeight * 2;//~
                 }
     
                 hr {

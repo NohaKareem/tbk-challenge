@@ -28,8 +28,8 @@
 		scrollTrigger:// CHISEL_IMG,
 		 {
 			trigger: CHISEL_IMG,
-			start: "-10 center",
-			start: "center",
+			start: 10,
+			// start: "center",
 			markers: true,
 			toggleActions: "restart pause restart pause"
 		},
@@ -42,7 +42,8 @@
 		scrollTrigger:
 		 {
 			trigger: SHAVINGS_IMG,
-			start: "-10 center",
+			start: 10,
+			// start: "center",
 			markers: true,
 			toggleActions: "restart pause restart pause"
 		},
