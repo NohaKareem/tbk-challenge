@@ -174,7 +174,7 @@ h1 {
 
             ul {
                 list-style: none;
-                margin-bottom: 0 $spacingHeight * 2 $spacingHeight * 2;
+                margin: 0 $spacingHeight * 2 $spacingHeight * 2;
             }
 
             li::before {
@@ -254,7 +254,7 @@ h1 {
                     color: $checkboxLabelPink;
                     margin-top: $spacingHeight;
                     font-size: $checkboxFontSize;
-                    width: 60%;
+                    // width: 60%;
 
                     display: grid;
                     grid-template-columns: 1fr 5fr;

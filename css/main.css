@@ -130,7 +130,7 @@ h1 {
 }
 .popOver #popOverContent main ul {
   list-style: none;
-  margin-bottom: 0 3em 3em;
+  margin: 0 3em 3em;
 }
 .popOver #popOverContent main li::before {
   color: #c40045;
@@ -185,7 +185,6 @@ h1 {
   color: #febed5;
   margin-top: 1.5em;
   font-size: 15px;
-  width: 60%;
   display: grid;
   grid-template-columns: 1fr 5fr;
 }
