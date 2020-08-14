@@ -159,7 +159,25 @@ h1 {
   padding-left: 10px;
 }
 .popOver #popOverContent footer form #confirmationLabel {
+  color: #febed5;
+  margin-top: 1.5em;
   font-size: 15px;
+  width: 40%;
+}
+.popOver #popOverContent footer form #confirmationLabel > input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: solid 1px #fbb6ce;
+  width: 15px;
+  height: 15px;
+}
+.popOver #popOverContent footer form #confirmationLabel > input:checked + span::before {
+  content: "✓";
+  position: absolute;
+  margin-top: 4px;
+  margin-left: -16px;
 }
 
 @media screen and (min-width: 1200px) {
