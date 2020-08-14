@@ -8,7 +8,7 @@
 	const CANCEL_BUTTON = document.querySelector('.cancelButton');	
 	const CTA_BUTTON = document.querySelector('.CTAbutton');	
 	const CONFIRMATION_CHECKBOX = document.querySelector('#confirmationLabel');	
-	console.log(CONFIRMATION_CHECKBOX)
+	
 	/**
 	 * reveal pop-over after 3 seconds, with easeOut animation
 	 */
