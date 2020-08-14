@@ -81,13 +81,14 @@ h1 {
     .rectangleFrame:first-child {
         position: absolute;
         top: $spacingHeight * 3;
-        height: 37%;//510px;
+        height: 37%;
         z-index: 1;
     }
 
     .rectangleFrame:last-child {
         height: 55px;
         margin-top: $spacingHeight * -5.5;
+        margin-bottom: $spacingHeight * 3;
     }
 
     //images
@@ -318,7 +319,7 @@ h1 {
         }
 
         .rectangleFrame:first-child {
-            height: 410px;//510px;
+            height: 410px;
         }
 
         #popOverContent {
@@ -332,7 +333,7 @@ h1 {
                 }
                 
                 .cancelButton {
-                    margin-right: 3%;//-$spacingWidth / 4;
+                    margin-right: 3%;
                     margin-top: $spacingHeight;
                 }
             }
@@ -342,7 +343,7 @@ h1 {
             form {
                 #confirmationLabel {
                     grid-template-columns: 1fr 9fr;
-                    width: 40%;//~
+                    width: 40%;
                 }
 
                 #formText {
@@ -358,7 +359,6 @@ h1 {
     }
 }
 
-// @media screen and (min-width: 1342px) and (max-width: 1400px) {
 @media screen and (min-width: 1347px) and (max-width: 1454px) {
     .popOver {        
         #popOverContent {
@@ -371,7 +371,7 @@ h1 {
     }
 }
 
-@media screen and (min-width: 1458px) {//1496px 1474
+@media screen and (min-width: 1458px) {
     .popOver {        
         #popOverContent {
             main {
