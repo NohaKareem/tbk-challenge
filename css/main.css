@@ -104,6 +104,7 @@ h1 {
 }
 .popOver #popOverContent main .inviteFirstLine {
   margin-top: 3em;
+  line-height: 1.5em;
 }
 .popOver #popOverContent main .largeText {
   font-size: 10vw;
@@ -119,6 +120,7 @@ h1 {
 .popOver #popOverContent main .inviteDetails {
   text-align: center;
   margin: -3em 20% 0 20%;
+  line-height: 1.5em;
 }
 .popOver #popOverContent main ul {
   list-style: none;
@@ -146,6 +148,10 @@ h1 {
   width: 138px;
   height: 40px;
 }
+.popOver #popOverContent footer .CTAbutton:hover {
+  background-color: white;
+  color: black;
+}
 .popOver #popOverContent footer form #formText {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -167,10 +173,12 @@ h1 {
   border: none;
 }
 .popOver #popOverContent footer form #confirmationLabel {
+  line-height: 1.2em;
+  font-size: 16px;
   color: #febed5;
   margin-top: 1.5em;
   font-size: 15px;
-  width: 40%;
+  width: 60%;
   display: grid;
   grid-template-columns: 1fr 5fr;
 }
@@ -191,9 +199,6 @@ h1 {
 }
 
 @media screen and (min-width: 1200px) {
-  .popOver {
-    background-color: blue;
-  }
   .popOver .chiselImg {
     width: 25%;
     margin-left: -81.5%;
@@ -211,6 +216,7 @@ h1 {
   }
   .popOver footer form #confirmationLabel {
     grid-template-columns: 1fr 9fr;
+    width: 40%;
   }
 }
 
