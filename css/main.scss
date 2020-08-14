@@ -382,7 +382,7 @@ h1 {
 
                 #confirmationLabel {
                     grid-template-columns: 1fr 9fr;
-                    width: 40%;
+                    width: 70%;
                     font-size: $desktopWidthFontSize5;
                 }
 
@@ -416,8 +416,7 @@ h1 {
         #popOverContent {
             main {
                 .cancelButton {
-                    margin-left: 104%;
-                    margin-right: 1%;
+                    margin-right: 3%;
                 }
             }
         }
