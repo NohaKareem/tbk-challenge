@@ -3,7 +3,6 @@ $mobileWidth: 320px;
 $spacingHeight: 1.5em;
 $spacingWidth: 10px;
 
-
 $translucentGrey: transparentize(#454545, 0.1);
 $frameGrey: #f5f5f5;
 $line_BulletRed: #c40045;
@@ -224,8 +223,9 @@ h1 {
 
                 #formText {
                     display: grid;
-                    grid-template-rows: repeat(3, minmax(0, 1fr));
+                    grid-template-rows: repeat(auto-fit, minmax(0, 1fr));
                     row-gap: $spacingWidth;
+                    grid-auto-rows: 1fr;
                 }
 
                 ::-webkit-input-placeholder {
@@ -290,7 +290,7 @@ h1 {
     .popOver {
         .rectangleFrame:first-child {
             height: 19.5%;
-        }   
+        }
     }
 }
 
@@ -350,8 +350,12 @@ h1 {
                 }
 
                 #formText {
+                    display: grid;
                     column-gap: $spacingWidth;
                     grid-template-columns: repeat(3, minmax(0, 1fr));
+
+                    grid-template-rows: 0;
+                    row-gap: $spacingWidth;
                 }
             }
         }
@@ -359,7 +363,6 @@ h1 {
 }
 
 // @media screen and (min-width: 1342px) and (max-width: 1400px) {
-    
 @media screen and (min-width: 1347px) and (max-width: 1454px) {
     .popOver {        
         #popOverContent {

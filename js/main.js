@@ -6,6 +6,7 @@
 	const CHISEL_IMG = document.querySelector('.chiselImg');
 	const SHAVINGS_IMG = document.querySelector('.shavingsImg');	
 	const CANCEL_BUTTON = document.querySelector('.cancelButton');	
+	const CTA_BUTTON = document.querySelector('.CTAbutton');	
 
 	/**
 	 * reveal pop-over after 3 seconds
@@ -26,6 +27,11 @@
 	 * close pop-over on cancel button click
 	 */
 	CANCEL_BUTTON.addEventListener('click', closePopOver, false); 
+
+	/**
+	 * test CTA button accessibilty
+	 */
+	CTA_BUTTON.addEventListener('click', () => { console.log('clicked CTA'); }, false); 
 	
 	/**
 	 * close pop-over on keyboard shortcut, ESC (ascii 27)
