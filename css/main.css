@@ -214,6 +214,9 @@ h1 {
   .popOver .rectangleFrame:first-child {
     height: 19.5%;
   }
+  .popOver #popOverContent .inviteDetails {
+    margin-top: 7.5em;
+  }
 }
 @media screen and (min-width: 360px) and (max-width: 890px) {
   .popOver .rectangleFrame:first-child {

@@ -299,6 +299,12 @@ h1 {
         .rectangleFrame:first-child {
             height: 19.5%;
         }
+
+        #popOverContent {
+            .inviteDetails {
+                margin-top: $spacingHeight * 5;
+            }
+        }
     }
 }
 
