@@ -136,7 +136,10 @@ h1 {
             .cancelButton {
                 color: $line_BulletRed;
                 border: none;
+                background-color: rgba(255,255, 255, 0);
+
                 margin-left: auto;
+                margin-right: $spacingWidth * 2;
                 margin-top: $spacingHeight;
                 cursor: pointer;
             }
@@ -331,6 +334,11 @@ h1 {
                 hr {
                     width: 30%;
                 }
+                
+                .cancelButton {
+                    margin-right: 3%;//-$spacingWidth / 4;
+                    margin-top: $spacingHeight;
+                }
             }
         }
 
@@ -344,6 +352,33 @@ h1 {
                 #formText {
                     column-gap: $spacingWidth;
                     grid-template-columns: repeat(3, minmax(0, 1fr));
+                }
+            }
+        }
+    }
+}
+
+// @media screen and (min-width: 1342px) and (max-width: 1400px) {
+    
+@media screen and (min-width: 1347px) and (max-width: 1454px) {
+    .popOver {        
+        #popOverContent {
+            main {
+                .cancelButton {
+                    margin-right: 1%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1458px) {//1496px 1474
+    .popOver {        
+        #popOverContent {
+            main {
+                .cancelButton {
+                    margin-left: 104%;
+                    margin-right: 1%;
                 }
             }
         }
