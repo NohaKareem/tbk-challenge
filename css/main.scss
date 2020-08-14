@@ -258,6 +258,8 @@ h1 {
 
                     display: grid;
                     grid-template-columns: 1fr 5fr;
+                    justify-items: end;
+                    column-gap: $spacingWidth;
                 }
 
                 #confirmationLabel > input{
