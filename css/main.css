@@ -130,7 +130,7 @@ h1 {
 }
 .popOver #popOverContent main ul {
   list-style: none;
-  margin-bottom: 3em;
+  margin-bottom: 0 3em 3em;
 }
 .popOver #popOverContent main li::before {
   color: #c40045;

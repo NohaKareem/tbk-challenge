@@ -96,13 +96,11 @@ h1 {
     }
 
     .chiselImg {
-        // width: 40%;
         margin-left: -80%;
         margin-top: 30%;
     }
 
     .shavingsImg {
-        // width: 25%;
         margin-right: -73%;
         margin-top: -90%;
     }
@@ -176,7 +174,7 @@ h1 {
 
             ul {
                 list-style: none;
-                margin-bottom: $spacingHeight * 2;
+                margin-bottom: 0 $spacingHeight * 2 $spacingHeight * 2;
             }
 
             li::before {
@@ -306,13 +304,11 @@ h1 {
     .popOver {
         // images
         .chiselImg {
-            // width: 25%;
             margin-left: -81.5%;
             margin-top: 20%;
         }
     
         .shavingsImg {
-            // width: 15%;
             margin-top: -40%;
         }
 

@@ -9,10 +9,11 @@
 	const CTA_BUTTON = document.querySelector('.CTAbutton');	
 
 	/**
-	 * reveal pop-over after 3 seconds
+	 * reveal pop-over after 3 seconds, with easeOut animation
 	 */
 	window.setTimeout(() => {
 		POPOVER.classList.remove("hidden");
+		gsap.fromTo(POPOVER, { opacity: 0 }, { opacity: 1, duration: 3, ease: Power1.easeEut });
 	}, TIME_TILL_POPUP);
 
 	/**
