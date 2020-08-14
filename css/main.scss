@@ -3,6 +3,13 @@ $mobileWidth: 320px;
 $spacingHeight: 1.5em;
 $spacingWidth: 10px;
 
+
+$desktopWidthFontSize1: 21pt;
+$desktopWidthFontSize2: 24pt;
+$desktopWidthFontSize3: 23pt;
+$desktopWidthFontSize4: 32pt;
+$desktopWidthFontSize5: 15pt;
+
 $translucentGrey: transparentize(#454545, 0.1);
 $frameGrey: #f5f5f5;
 $line_BulletRed: #c40045;
@@ -50,7 +57,10 @@ $checkboxFontSize: 15px;
 }
 
 body {
-    @extend .futuraPTFont;
+    // @extend .futuraPTFont;
+    font-family: futura-pt, sans-serif;
+    font-weight: 400;
+    font-style: normal;
     position: relative;
 }
 
@@ -72,9 +82,9 @@ h1 {
     overflow-x: hidden;
     position: relative;
 
-    //rectangle frames
+    // rectangle frames
     .rectangleFrame {
-        width: 30%;
+        width: 20%;
         border: solid  6px $frameGrey;
     }
 
@@ -91,7 +101,7 @@ h1 {
         margin-bottom: $spacingHeight * 3;
     }
 
-    //images
+    // images
     .overlayImg {
         position: absolute;
     }
@@ -141,7 +151,7 @@ h1 {
                 cursor: pointer;
             }
 
-            h1 {
+            h1, h2 {
                 margin-bottom: $spacingHeight;
             }
 
@@ -198,6 +208,7 @@ h1 {
             color: white;
 
             p {
+                // @extend .futuraPTFont; 
                 margin-bottom: $spacingHeight;
             }
 
@@ -324,14 +335,26 @@ h1 {
 
         #popOverContent {
             main {
+                .inviteFirstLine, h2, ul, .cancelButton {
+                    font-size: $desktopWidthFontSize1;
+                }
+
+                h1.emphasis {
+                    font-size: $desktopWidthFontSize2;
+                }
+                
                 .largeText {
-                    font-size: 70px;
+                    font-size: 70pt;
+                }
+
+                p.inviteDetails {
+                    font-size: $desktopWidthFontSize3;
                 }
     
                 hr {
                     width: 30%;
                 }
-                
+    
                 .cancelButton {
                     margin-right: 3%;
                     margin-top: $spacingHeight;
@@ -340,10 +363,27 @@ h1 {
         }
 
         footer {
+            h1 {
+                font-size: $desktopWidthFontSize4;
+            }
+
+            p {
+                font-size: $desktopWidthFontSize3;
+            }
+
             form {
+                .CTAbutton {
+                    height: 80px;
+                }   
+                
+                .CTAbutton, input[type=text], input[type=email] {
+                    font-size: $desktopWidthFontSize1;
+                }
+
                 #confirmationLabel {
                     grid-template-columns: 1fr 9fr;
                     width: 40%;
+                    font-size: $desktopWidthFontSize5;
                 }
 
                 #formText {

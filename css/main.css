@@ -11,7 +11,7 @@
   font-style: normal;
 }
 
-.futuraPTFont, .popOver #popOverContent footer form ::placeholder, .popOver #popOverContent footer form :-ms-input-placeholder, .popOver #popOverContent footer form ::-webkit-input-placeholder, body {
+.futuraPTFont, .popOver #popOverContent footer form ::placeholder, .popOver #popOverContent footer form :-ms-input-placeholder, .popOver #popOverContent footer form ::-webkit-input-placeholder {
   font-family: futura-pt, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -37,6 +37,9 @@
 }
 
 body {
+  font-family: futura-pt, sans-serif;
+  font-weight: 400;
+  font-style: normal;
   position: relative;
 }
 
@@ -56,7 +59,7 @@ h1 {
   position: relative;
 }
 .popOver .rectangleFrame {
-  width: 30%;
+  width: 20%;
   border: solid 6px #f5f5f5;
 }
 .popOver .rectangleFrame:first-child {
@@ -106,7 +109,7 @@ h1 {
   margin-top: 1.5em;
   cursor: pointer;
 }
-.popOver #popOverContent main h1 {
+.popOver #popOverContent main h1, .popOver #popOverContent main h2 {
   margin-bottom: 1.5em;
 }
 .popOver #popOverContent main .inviteFirstLine {
@@ -231,8 +234,17 @@ h1 {
   .popOver .rectangleFrame:first-child {
     height: 410px;
   }
+  .popOver #popOverContent main .inviteFirstLine, .popOver #popOverContent main h2, .popOver #popOverContent main ul, .popOver #popOverContent main .cancelButton {
+    font-size: 21pt;
+  }
+  .popOver #popOverContent main h1.emphasis {
+    font-size: 24pt;
+  }
   .popOver #popOverContent main .largeText {
-    font-size: 70px;
+    font-size: 70pt;
+  }
+  .popOver #popOverContent main p.inviteDetails {
+    font-size: 23pt;
   }
   .popOver #popOverContent main hr {
     width: 30%;
@@ -241,9 +253,22 @@ h1 {
     margin-right: 3%;
     margin-top: 1.5em;
   }
+  .popOver footer h1 {
+    font-size: 32pt;
+  }
+  .popOver footer p {
+    font-size: 23pt;
+  }
+  .popOver footer form .CTAbutton {
+    height: 80px;
+  }
+  .popOver footer form .CTAbutton, .popOver footer form input[type=text], .popOver footer form input[type=email] {
+    font-size: 21pt;
+  }
   .popOver footer form #confirmationLabel {
     grid-template-columns: 1fr 9fr;
     width: 40%;
+    font-size: 15pt;
   }
   .popOver footer form #formText {
     display: grid;
