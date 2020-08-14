@@ -156,7 +156,7 @@ h1 {
   background-color: black;
   color: white;
   border: none;
-  height: 40px;
+  height: 7vh;
 }
 .popOver #popOverContent footer .CTAbutton:hover {
   background-color: white;
@@ -258,9 +258,6 @@ h1 {
   }
   .popOver footer p {
     font-size: 23pt;
-  }
-  .popOver footer form .CTAbutton {
-    height: 80px;
   }
   .popOver footer form .CTAbutton, .popOver footer form input[type=text], .popOver footer form input[type=email] {
     font-size: 21pt;

@@ -57,7 +57,6 @@ $checkboxFontSize: 15px;
 }
 
 body {
-    // @extend .futuraPTFont;
     font-family: futura-pt, sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -208,7 +207,6 @@ h1 {
             color: white;
 
             p {
-                // @extend .futuraPTFont; 
                 margin-bottom: $spacingHeight;
             }
 
@@ -219,7 +217,7 @@ h1 {
                 color: white;
                 border: none;
 
-                height: 40px;
+                height: 7vh;
             }
             
             .CTAbutton:hover {
@@ -371,11 +369,7 @@ h1 {
                 font-size: $desktopWidthFontSize3;
             }
 
-            form {
-                .CTAbutton {
-                    height: 80px;
-                }   
-                
+            form {                
                 .CTAbutton, input[type=text], input[type=email] {
                     font-size: $desktopWidthFontSize1;
                 }
