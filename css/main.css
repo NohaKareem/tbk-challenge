@@ -11,7 +11,7 @@
   font-style: normal;
 }
 
-.futuraPTFont, .popOver #popOverContent footer form input::placeholder, body {
+.futuraPTFont, .popOver #popOverContent footer form ::placeholder, .popOver #popOverContent footer form :-ms-input-placeholder, .popOver #popOverContent footer form ::-webkit-input-placeholder, body {
   font-family: futura-pt, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -106,7 +106,7 @@ h1 {
   margin-top: 3em;
 }
 .popOver #popOverContent main .largeText {
-  font-size: 70px;
+  font-size: 10vw;
 }
 .popOver #popOverContent main hr {
   margin: 1.5em 0 1.5em 0;
@@ -151,18 +151,28 @@ h1 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   column-gap: 10px;
 }
-.popOver #popOverContent footer form #formText intput[type=email] {
-  background-color: red;
-}
-.popOver #popOverContent footer form input::placeholder {
+.popOver #popOverContent footer form ::-webkit-input-placeholder {
   color: black;
   padding-left: 10px;
+}
+.popOver #popOverContent footer form :-ms-input-placeholder {
+  color: black;
+  padding-left: 10px;
+}
+.popOver #popOverContent footer form ::placeholder {
+  color: black;
+  padding-left: 10px;
+}
+.popOver #popOverContent footer form input[type=text], .popOver #popOverContent footer form input[type=email] {
+  border: none;
 }
 .popOver #popOverContent footer form #confirmationLabel {
   color: #febed5;
   margin-top: 1.5em;
   font-size: 15px;
   width: 40%;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
 }
 .popOver #popOverContent footer form #confirmationLabel > input {
   -webkit-appearance: none;
@@ -181,6 +191,9 @@ h1 {
 }
 
 @media screen and (min-width: 1200px) {
+  .popOver {
+    background-color: blue;
+  }
   .popOver .chiselImg {
     width: 25%;
     margin-left: -81.5%;
@@ -190,8 +203,14 @@ h1 {
     width: 15%;
     margin-top: -40%;
   }
+  .popOver #popOverContent main .largeText {
+    font-size: 70px;
+  }
   .popOver #popOverContent main hr {
     width: 30%;
+  }
+  .popOver footer form #confirmationLabel {
+    grid-template-columns: 1fr 9fr;
   }
 }
 

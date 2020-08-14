@@ -149,7 +149,7 @@ h1 {
             }
 
             .largeText {
-                font-size: 70px;
+                font-size: 10vw;
                 // margin-bottom: $spacingHeight * 2;//~
             }
 
@@ -216,34 +216,34 @@ h1 {
                     display: grid;
                     grid-template-columns: repeat(3, minmax(0, 1fr));
                     column-gap: 10px;
-                    
-                    intput[type=email] {
-                        background-color: red;
-                    }
                 }
 
-                // ::-webkit-input-placeholder {
-                //     color: black;
-                //     @extend .futuraPTFont;
-                //     padding-left: 10px;
-                // }
-                  
-                // :-ms-input-placeholder {
-                //     color: black;
-                //     @extend .futuraPTFont;
-                //     padding-left: 10px;
-                // }
-                  
-                // ::placeholder {
-                //     color: black;
-                //     @extend .futuraPTFont;
-                //     padding-left: 10px;
-                // }
-
-                input::placeholder {
+                ::-webkit-input-placeholder {
                     color: black;
                     @extend .futuraPTFont;
                     padding-left: 10px;
+                }
+                  
+                :-ms-input-placeholder {
+                    color: black;
+                    @extend .futuraPTFont;
+                    padding-left: 10px;
+                }
+                  
+                ::placeholder {
+                    color: black;
+                    @extend .futuraPTFont;
+                    padding-left: 10px;
+                }
+
+                // input::placeholder {
+                //     color: black;
+                //     @extend .futuraPTFont;
+                //     padding-left: 10px;
+                // }
+
+                input[type=text], input[type=email] {
+                    border: none;
                 }
 
                 // checkbox + label styling
@@ -252,6 +252,9 @@ h1 {
                     margin-top: $spacingHeight;
                     font-size: $checkboxFontSize;
                     width: 40%;
+
+                    display: grid;
+                    grid-template-columns: 1fr 5fr;
                 }
 
                 #confirmationLabel > input{
@@ -276,10 +279,26 @@ h1 {
     }
 }
 
+    // // mobile 
+    // @media screen and (min-width: $mobileWidth) {
+    //     .popOver{
+    //         background-color: green;
+    //     }
+
+    //     #popOverContent {
+    //         main {
+    //             .largeText {
+                    
+    //             }
+    //         }   
+    //     }
+    // }
+
 // desktop 
 @media screen and (min-width: $desktopWidth) {
     .popOver {
-        // images
+    background-color: blue;
+    // images
         .chiselImg {
             width: 25%;
             margin-left: -81.5%;
@@ -294,8 +313,21 @@ h1 {
 
         #popOverContent {
             main {
+                .largeText {
+                    font-size: 70px;
+                    // margin-bottom: $spacingHeight * 2;//~
+                }
+    
                 hr {
                     width: 30%;
+                }
+            }
+        }
+
+        footer {
+            form {
+                #confirmationLabel {
+                    grid-template-columns: 1fr 9fr;
                 }
             }
         }
