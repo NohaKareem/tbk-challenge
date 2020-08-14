@@ -61,7 +61,7 @@
 			start: 10,
 			scrub: 2,
 			// markers: true,
-			toggleActions: "restart pause restart pause"
+			toggleActions: "restart pause start pause"
 		},
 		y: -500,
 		duration: 10
@@ -74,7 +74,7 @@
 			start: 10,
 			scrub: 2,
 			// markers: true,
-			toggleActions: "restart pause restart pause"
+			toggleActions: "restart pause start pause"
 		},
 		y: 500,
 		duration: 10
