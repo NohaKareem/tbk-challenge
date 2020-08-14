@@ -70,16 +70,13 @@ h1 {
   margin-top: -8.25em;
 }
 .popOver .overlayImg {
-  width: 100px;
   position: absolute;
 }
 .popOver .chiselImg {
-  width: 40%;
   margin-left: -80%;
   margin-top: 30%;
 }
 .popOver .shavingsImg {
-  width: 25%;
   margin-right: -73%;
   margin-top: -90%;
 }
@@ -220,12 +217,10 @@ h1 {
 }
 @media screen and (min-width: 1200px) {
   .popOver .chiselImg {
-    width: 25%;
     margin-left: -81.5%;
     margin-top: 20%;
   }
   .popOver .shavingsImg {
-    width: 15%;
     margin-top: -40%;
   }
   .popOver .rectangleFrame {
