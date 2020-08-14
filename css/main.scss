@@ -250,11 +250,9 @@ h1 {
                 // checkbox + label styling
                 #confirmationLabel {
                     line-height: $spacingHeight / 1.25;
-                    font-size: 16px;//~
                     color: $checkboxLabelPink;
                     margin-top: $spacingHeight;
                     font-size: $checkboxFontSize;
-                    // width: 60%;
 
                     display: grid;
                     grid-template-columns: 1fr 5fr;
@@ -269,6 +267,7 @@ h1 {
                     appearance: none;
 
                     border: solid 1px $checkboxPink;
+                    padding: 5px;
                     width: 15px;
                     height: 15px;
                 }
@@ -276,8 +275,8 @@ h1 {
                 #confirmationLabel > input:checked + span::before {
                     content: '\2713';
                     position: absolute;
-                    margin-top: 4px;
-                    margin-left: -16px;
+                    margin-top: 2px;
+                    margin-left: -25.5px;
                 }
             }
         }
