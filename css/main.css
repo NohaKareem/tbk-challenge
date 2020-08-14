@@ -28,7 +28,7 @@
   display: none;
 }
 
-.uppercase, .popOver #popOverContent footer .CTAbutton {
+.uppercase {
   text-transform: uppercase;
 }
 
@@ -150,6 +150,9 @@ h1 {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   column-gap: 10px;
+}
+.popOver #popOverContent footer form #formText intput[type=email] {
+  background-color: red;
 }
 .popOver #popOverContent footer form input::placeholder {
   color: black;

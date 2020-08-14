@@ -196,7 +196,6 @@ h1 {
             }
 
             .CTAbutton {
-                @extend .uppercase;
                 @extend .freightFontSemibold;
 
                 background-color: black;
@@ -215,6 +214,10 @@ h1 {
                     display: grid;
                     grid-template-columns: repeat(3, minmax(0, 1fr));
                     column-gap: 10px;
+                    
+                    intput[type=email] {
+                        background-color: red;
+                    }
                 }
 
                 // ::-webkit-input-placeholder {
@@ -234,6 +237,8 @@ h1 {
                 //     @extend .futuraPTFont;
                 //     padding-left: 10px;
                 // }
+
+           
 
                 input::placeholder {
                     color: black;
