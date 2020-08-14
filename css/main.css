@@ -32,6 +32,10 @@
   text-transform: uppercase;
 }
 
+.redText {
+  color: #9f173d;
+}
+
 body {
   position: relative;
 }
@@ -85,8 +89,8 @@ h1 {
 .popOver #popOverContent main .inviteFirstLine {
   margin-top: 3em;
 }
-.popOver #popOverContent main #inviteImage {
-  margin-bottom: 3em;
+.popOver #popOverContent main .largeText {
+  font-size: 70px;
 }
 .popOver #popOverContent main hr {
   margin: 1.5em 0 1.5em 0;
@@ -98,7 +102,7 @@ h1 {
 }
 .popOver #popOverContent main .inviteDetails {
   text-align: center;
-  margin: 0 20% 0 20%;
+  margin: -3em 20% 0 20%;
 }
 .popOver #popOverContent main ul {
   list-style: none;
