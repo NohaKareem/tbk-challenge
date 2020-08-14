@@ -181,6 +181,7 @@ h1 {
             li::before {
                 color: $line_BulletRed;
                 content: "•";
+                margin-right: $spacingWidth * 1.25;
             }
 
             li {

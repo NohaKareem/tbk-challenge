@@ -129,6 +129,7 @@ h1 {
 .popOver #popOverContent main li::before {
   color: #c40045;
   content: "•";
+  margin-right: 12.5px;
 }
 .popOver #popOverContent main li {
   line-height: 1.5em;
