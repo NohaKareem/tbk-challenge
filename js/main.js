@@ -33,7 +33,7 @@
 			markers: true,
 			toggleActions: "restart pause restart pause"
 		},
-		y: -200,
+		y: -500,
 		duration: 7
 	});
 
@@ -48,7 +48,7 @@
 			markers: true,
 			toggleActions: "restart pause restart pause"
 		},
-		y: 200,
+		y: 500,
 		duration: 7
 	});
 
