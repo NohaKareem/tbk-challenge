@@ -3,6 +3,8 @@ $mobileWidth: 320px;
 $spacingHeight: 1.5em;
 $spacingWidth: 10px;
 
+$checkboxFontSize: 15pt;
+
 $desktopFontSize1: 21pt;
 $desktopFontSize2: 24pt;
 $desktopFontSize3: 23pt;
@@ -13,6 +15,7 @@ $mobileFontSize1: 3.5vw;
 $mobileFontSize2: 4vw;
 $mobileFontSize3: 3.8vw;
 $mobileFontSize4: 4.4vw;
+$mobileFontSize5: 3.4vw;
 
 $translucentGrey: transparentize(#454545, 0.1);
 $frameGrey: #f5f5f5;
@@ -21,7 +24,6 @@ $footer_FontRed: #9f173d;
 $checkboxLabelPink: #febed5;
 $checkboxPink: #fbb6ce;
 
-$checkboxFontSize: 15pt;
 
 .freightFontItlaic {
     font-family: freight-big-pro, serif;
@@ -254,7 +256,6 @@ h1 {
             
             form {
                 @extend .centerAlign;
-                // font-size: $mobileFontSize1;
 
                 #formText {
                     display: grid;
@@ -366,7 +367,7 @@ h1 {
                     }
                                   
                     #confirmationLabel {
-                        font-size: 3.5vw;
+                        font-size: $mobileFontSize5;
                     }
 
                     input[type=checkbox]:checked + span::before {
